@@ -4,18 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "CountryPicker",
+    name: "CountryCodePicker",
     products: [
         .library(
-            name: "CountryPicker",
-            targets: ["CountryPicker"]),
+            name: "CountryCodePicker",
+            targets: ["CountryCodePicker"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "CountryPicker",
+            name: "CountryCodePicker",
             resources: [
-                .process("Resources"),
+                .process("Resources/countryCodes.json"),
             ]),
     ]
 )
